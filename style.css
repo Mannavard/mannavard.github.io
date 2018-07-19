@@ -2,7 +2,7 @@ body {
   background-color: #0d0e11;
   margin: 0 auto;
   width: 100%;
-  font-family: "Broadway";
+  font-family: 'Montserrat', sans-serif;
   color: #fff;
   font-weight: 300;
   line-height: 28px;
@@ -19,7 +19,6 @@ body {
 }
 
 .big {
-  font-family: "Indie Flower";
   text-align: center;
   font-size: 60px;
   line-height: 60px;
@@ -30,7 +29,6 @@ body {
 
 p,
 li {
-  font-family: "Indie Flower", cursive;
   font-size: 1em;
 }
 
