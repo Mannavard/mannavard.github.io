@@ -1,5 +1,5 @@
 body {
-  background-color: #0d0e11;
+  background-color: #323232;
   margin: 0 auto;
   width: 100%;
   font-family: 'Montserrat', sans-serif;
@@ -38,12 +38,86 @@ em {
 
 .black {
   padding: 30px;
-  background-color: #0d0e11;
+  background-color: #323232;
   color: #fff;
 }
 
 .white {
   padding: 30px;
   background-color: #fff;
-  color: #0d0e11;
+  color: #101010;
+}
+
+h3 {
+  display: inline;
+}
+
+/* Acordeon styles */
+
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.tab {
+  position: relative;
+  margin-bottom: 1px;
+  width: 100%;
+  color: #fff;
+  overflow: hidden;
+}
+
+label {
+  position: relative;
+  display: block;
+  padding: 0 0 0 1em;
+  background: #1b6abf;
+  font-weight: bold;
+  line-height: 3;
+  text-align: left;
+  cursor: pointer;
+}
+
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  background: #1578e2;
+  -webkit-transition: max-height .35s;
+  -o-transition: max-height .35s;
+  transition: max-height .35s;
+}
+
+.tab-content p {
+  margin: 1em;
+}
+
+/* :checked */
+
+input:checked~.tab-content {
+  max-height: 16em;
+}
+
+/* Icon */
+
+label::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 3em;
+  height: 3em;
+  line-height: 3;
+  text-align: center;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+
+input[type=checkbox]+label::after {
+  content: "+";
+}
+
+input[type=checkbox]:checked+label::after {
+  transform: rotate(45deg);
 }
