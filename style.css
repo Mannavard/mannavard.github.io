@@ -30,7 +30,7 @@ body {
     border-bottom: 1px dashed #fff;
 }
 
-.big+p {
+p {
     font-family: 'Indie Flower', cursive;
     font-size: 35px;
 }
