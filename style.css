@@ -4,8 +4,8 @@ body {
   width: 100%;
   font-family: "Montserrat", sans-serif;
   color: #fff;
-  font-weight: 300;
-  line-height: 28px;
+  font-weight: 400;
+  line-height: 39px;
   font-size: 19px;
 }
 
@@ -47,7 +47,12 @@ em {
   color: #101010;
 }
 
+.info h2 {
+  padding-left: 30px;
+  display: block;
+}
 .info h3 {
+  padding-left: 10px;
   display: inline;
 }
 
@@ -61,14 +66,14 @@ input {
 
 .tab {
   position: relative;
-  margin-bottom: 1px;
+  border-bottom: 1px solid #fff;
   width: 100%;
   color: #fff;
   overflow: hidden;
 }
 
 .info {
-  padding: 30px 0px;
+  padding: 30px 0px 0px 0px;
   background-color: #3091f8;
 }
 
@@ -96,10 +101,14 @@ label {
   margin: 1em;
 }
 
+h3 {
+  padding-right: 50px;
+}
+
 /* :checked */
 
 input:checked ~ .tab-content {
-  max-height: 16em;
+  max-height: 20em;
 }
 
 /* Icon */
@@ -119,10 +128,14 @@ label::after {
 }
 
 input[type="checkbox"] + label::after {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   content: "+";
 }
 
 input[type="checkbox"]:checked + label::after {
   transform: rotate(45deg);
+}
+
+tab:nth-child(3) {
+  padding: 100px;
 }
