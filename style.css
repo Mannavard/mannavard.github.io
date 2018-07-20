@@ -74,14 +74,14 @@ input {
 
 .info {
   padding: 30px 0px 0px 0px;
-  background-color: #3091f8;
+  background-color: #36598a;
 }
 
 label {
   position: relative;
   display: block;
   padding: 0 0 0 1em;
-  background: #3091f8;
+  background: #36598a;
   font-weight: bold;
   line-height: 3;
   text-align: left;
@@ -91,7 +91,7 @@ label {
 .tab-content {
   max-height: 0;
   overflow: hidden;
-  background: #56a8ff;
+  background: #3c72bf;
   -webkit-transition: max-height 0.35s;
   -o-transition: max-height 0.35s;
   transition: max-height 0.35s;
@@ -108,7 +108,7 @@ h3 {
 /* :checked */
 
 input:checked ~ .tab-content {
-  max-height: 20em;
+  max-height: 24em;
 }
 
 /* Icon */
@@ -136,6 +136,14 @@ input[type="checkbox"]:checked + label::after {
   transform: rotate(45deg);
 }
 
-tab:nth-child(3) {
-  padding: 100px;
+.tab-content p,
+ul {
+  margin-left: 30px;
+}
+
+.spacing {
+  letter-spacing: 2px;
+}
+.contacts {
+  font-weight: 500;
 }
