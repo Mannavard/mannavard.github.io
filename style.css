@@ -66,12 +66,12 @@ em {
 
 /* Accordion styles */
 
-.info {
+.work-experience-accordion {
   padding-top: 30px;
   background-color: #36598a;
 }
 
-.info h2 {
+.work-experience-accordion h2 {
   padding-left: 30px;
   display: block;
 }
@@ -103,6 +103,7 @@ label {
 
 .tab-label {
   font-size: 19px;
+  padding-right: 19px;
   font-weight: bold;
 }
 
@@ -110,7 +111,6 @@ label {
   display: flex;
   align-items: center;
   justify-content: center;
-  align-self: flex-start;
   margin-left: auto;
   margin-right: 1em;
   width: 24px;
@@ -148,7 +148,7 @@ input[type="checkbox"]:checked + label > .tab-icon {
 /* :checked */
 
 input:checked ~ .tab-content {
-  max-height: 24em;
+  max-height: 45em;
 }
 
 /* Icon */
