@@ -1,0 +1,7 @@
+<div class="w-100 h-100 p-4 bg-emerald-200 rounded-xl cursor-pointer" *ngIf="subject" (click)="moveToSubject()">
+  <div class="p-2 bg-emerald-800 flex justify-center items-center sm:justify-start rounded text-white">
+    <i class="block w-12 h-12 bg-contain bg-no-repeat sm:mr-4" [ngStyle]="{'background-image': 'url(../assets/icons/' + subject.icon + '.svg)'}"></i>
+    <p class="hidden sm:block">{{subject.title}}</p>
+  </div>
+  <p class="hidden mt-4 md:block">{{subject.description}}</p>
+</div>
