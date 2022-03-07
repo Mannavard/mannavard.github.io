@@ -64,13 +64,14 @@ export class AppModule {}</pre>`
                 <p>Dependency injection (DI) lets you keep your component classes lean and efficient. They (components) don't fetch data from the server, validate user input, or log directly to the console; they <b>delegate such tasks to services</b>.</p>`
       }, {
         id: 'q9',
-        label: '9. What are decorators in Angular?',
-        value: 'Decorators are a design pattern or functions that define how Angular features work. They are used to make prior modifications to a class, service, or filter. Angular supports four types of decorators, they are:\n' +
-          '\n' +
-          'Class Decorators\n' +
-          'Property Decorators\n' +
-          'Method Decorators\n' +
-          'Parameter Decorators'
+        label: '9. What are Decorators in Angular?',
+        value: `<p>Decorators are a design pattern or functions that <b>define how Angular features work</b>. They are used to make prior modifications to a class, service, or filter. Angular supports four types of decorators, they are:</p>
+          <ul>
+            <li>Class Decorators: <ul><li><code>@NgModule</li></code><li><code>@Component</li></code><li><code>@Injectable</li></code><li><code>@Directive</li></code><li><code>@Pipe</li></code></ul></li>
+            <li>Property Decorators: <ul><li><code>@Input</code></li><li><code>@Output</code></li><li><code>@ContentChild</code></li><li><code>@ContentChildren</code></li><li><code>@ViewChild</code></li><li><code>@ViewChildren</code></li><li><code>@HostBinding</code></li></ul></li>
+            <li>Method Decorators: <code>@HostListener</code>
+            <li>Parameter Decorators: <ul><li><code>@Inject</code></li><li><code>@Host</code></li><li><code>@Self</code></li><li><code>@SkipSelf</code></li><li><code>@Optional</code></li></ul></li>
+          </ul>`
       }, {
         id: 'q10',
         label: '10. What are Directives in Angular?',

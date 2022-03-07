@@ -1,12 +1,13 @@
 <div class="accordion" id="accordion" *ngIf="list">
   <div *ngFor="let item of list.items; let i = index; trackBy: trackByFn" class="accordion-item bg-white border border-gray-200">
     <h2 class="accordion-header mb-0" [id]="'heading' + i">
-      <button class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none"
-              type="button"
-              [attr.data-bs-toggle]="'collapse'"
-              [attr.data-bs-target]="'#collapse' + i"
-              [attr.aria-expanded]="false"
-              [attr.aria-controls]="'collapse' + i">
+      <button
+        class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none"
+        type="button"
+        [attr.data-bs-toggle]="'collapse'"
+        [attr.data-bs-target]="'#collapse' + i"
+        [attr.aria-expanded]="false"
+        [attr.aria-controls]="'collapse' + i">
         {{item.label}}
       </button>
     </h2>
@@ -16,7 +17,6 @@
          [attr.data-bs-parent]="'#accordion'">
       <div class="accordion-body text-xs md:text-sm py-4 px-5">
         <div class="description" [innerHTML]="item.value | injectedHTMLStyling"></div>
-        <code *ngIf="item.example" class="mt-1 bg-red-100 py-2 w-full block">{{item.example}}</code>
       </div>
     </div>
   </div>
@@ -25,3 +25,12 @@
 <div *ngIf="!list" class="mt-4">
   No content for now, sorry!
 </div>
+
+<!--  dummy elements for tailwind classes initialize-->
+<ng-container *ngIf="false">
+  <p class="mb-4"></p>
+  <ul class=""></ul>
+  <li class="ml-4 list-disc"></li>
+  <code class="bg-indigo-100"></code>
+  <pre class="bg-blue-50 border-l-rose-400 border-l-4 py-1 pl-2 shadow-md"></pre>
+</ng-container>
