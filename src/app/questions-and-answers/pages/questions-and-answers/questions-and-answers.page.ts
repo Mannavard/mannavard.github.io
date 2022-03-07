@@ -21,9 +21,7 @@ export class QuestionsAndAnswersPage {
   ) {
     const navState = this.router.getCurrentNavigation()?.extras.state;
     const subjectId = (navState) ? navState['id'] : undefined;
-    console.log(subjectId);
     this.list = this.questionsAndAnswersService.getQuestionsAndAnswersBySubjectId(subjectId);
-    console.log(this.list);
   }
 
 
